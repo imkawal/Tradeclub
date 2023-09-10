@@ -20,6 +20,7 @@ import AddSlider from './components/SliderComponent/AddSlider';
 import EditSlider from './components/SliderComponent/EditSlider';
 import ShowTableProductReport from './components/ProductReport/ShowTableProductReport';
 import ShowDashBoard from './components/dashboard';
+import ConditionalScript from './EcomComponents/home';
 
 function App() {
   return (
@@ -49,9 +50,11 @@ function App() {
                         <Route path="/AddSlider" element={<AddSlider />}/>
                         <Route path="/EditSlider/:userID" element={<EditSlider />}/>
                         <Route path="/ShowTableProductReport" element={<ShowTableProductReport />}/>
-                        {/* Define other routes here */}
+                        {/* Define other routes here */} 
+                        <Route path="/ecom" element={<ConditionalScript/>}/>
                    </Routes>
           </HeaderFunction>
+          
       </div>
   );
 }
