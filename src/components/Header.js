@@ -15,6 +15,7 @@ function HeaderFunction({ children }) {
   if (type == "ecom") {
     return (
       <>
+            {children}
         </>
     );
   } else {

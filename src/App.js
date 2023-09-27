@@ -21,6 +21,7 @@ import EditSlider from './components/SliderComponent/EditSlider';
 import ShowTableProductReport from './components/ProductReport/ShowTableProductReport';
 import ShowDashBoard from './components/dashboard';
 import ConditionalScript from './EcomComponents/home';
+import ViewProduct from './EcomComponents/ViewProduct';
 
 function App() {
   return (
@@ -51,7 +52,9 @@ function App() {
                         <Route path="/EditSlider/:userID" element={<EditSlider />}/>
                         <Route path="/ShowTableProductReport" element={<ShowTableProductReport />}/>
                         {/* Define other routes here */} 
+                         {/* Ecom Routes Start Here */}
                         <Route path="/ecom" element={<ConditionalScript/>}/>
+                        <Route path="/ecom/ViewProduct" element={<ViewProduct/>}/>
                    </Routes>
           </HeaderFunction>
           
